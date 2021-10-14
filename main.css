@@ -1,0 +1,225 @@
+/* 輪播圖 */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    list-style: none;
+}
+.liItem img{
+    /* 把圖片之間預設間距高取消 */
+    vertical-align: top;
+    width: 900px;
+    height: 270px;
+}
+.box{
+    width: 900px;
+    height: 270px;
+    margin: 0px auto;
+    border: 2px solid #333;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxUl{
+    position: absolute;
+    width: 1000%;
+}
+.liItem{
+    float: left;
+}
+
+.btnLeft,.btnRight{
+    width: 30px;
+    height: 80px;
+    display: inline-block;
+    background-color: #333;
+    color: #ccc;
+    line-height: 80px;
+    text-align: center;
+    opacity: .4;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.btnLeft{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-left: 20px;
+    margin-top: -40px;
+}
+.btnRight{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    right: 20px;
+}
+
+.dots{
+    position: absolute;
+    left:45%;
+    bottom: 10px;
+}
+.dots li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    border: #333333 solid 1px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* 計時器 */
+main {
+    text-align: center;
+    background: #00ecb9;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: rgb(95, 95, 95);
+  /* display: inline-block; */
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0;
+  margin-bottom: -80px;
+}       
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #d2d6d5;
+  display: inline-block;
+}       
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #abadad;
+  display: inline-block;
+}       
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* 商品類 */
+.mallul{
+    list-style: none;
+}
+.steps-inner-tag1{
+    height: 270px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.fz-mbl-16{
+    position: fixed;
+    z-index: 1000;
+    margin-top: 30px;
+}
+.mallul li{
+    height: 30px;
+    line-height: 30px;
+    border: 3px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.mallul li:hover{
+    background-color: yellow;
+}
+.mh-portfolio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.leftContainaer{
+    width: 20%;
+}
+.containe{
+    width: 80%;
+}
+.mall-categories-box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mall-box{
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.mall-box img{
+    width: 100%;
+}
+
+
+.search-form {
+    margin-top: 100px;
+    margin-bottom: -100px;
+    position: sticky;
+    top: 0;
+}
+
+.search-form #search-input{
+    width: 85%;
+    height: 50px;
+    border: 2px solid rgb(155, 154, 154);
+}
+.search-form .seabtn{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    right: 0px;
+    border: none;
+}
+.topp{
+    border: 2px solid rgb(155, 154, 154);
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  background-color: rgb(243, 239, 243);
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  opacity: 0.3;
+  transition: .4s;
+  border-radius: 8px;
+  z-index: 99;
+}
+.topp:hover{
+  opacity: 0.7;
+  transform: translateY(-9px);
+  border: 2px solid rgb(255, 218, 9);
+}
+
+.marsk-container{
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    position: absolute;
+    position: fixed; 
+    top: 50%;      
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: rgba(0,0,0,.5); 
+    z-index: 1000;  
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 250, 250);
+}
+.marskcontainer{
+    position: absolute;
+    top: 50%;      
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
